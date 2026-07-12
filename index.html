@@ -11,15 +11,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      /* 사이드바 배경색 지정 (PANTONE 202C) */
+      #sidebar {
+        background-color: #862633 !important;
+      }
+      
+      /* 사이드바 내부 텍스트 색상 및 라인 조정 (어두운 붉은색 배경에 맞게) */
+      #sidebar .inner nav ul li a {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      
+      #sidebar .inner nav ul li a:hover,
+      #sidebar .inner nav ul li a.active {
+        color: #ffffff;
+      }
+    </style>
+  </head>
 	</head>
 	<body class="is-preload">
 
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
-          <div style="text-align: center; margin-bottom: 2em;">
-            <img src="images/profile.jpg" alt="Jaehoon Kim" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255, 255, 255, 0.2);" />
-          </div>
+          <div style="padding: 2.5%; width: 40%; max-width: 40%; margin: 0 auto 2em auto; text-align: center;">
+            <a href="images/profile.jpg" class="hoverZoomLink">
+              <img src="images/profile.jpg" alt="profile photo" style="width: 100%; max-width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%; border: 3px solid rgba(255, 255, 255, 0.2);" />
+            </a>
+      </div>
 					<nav>
 						<ul>
 							<li><a href="#intro">ABOUT</a></li>
