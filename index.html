@@ -36,6 +36,22 @@
             color: #ffffff !important;
             /* 내부 아이콘 모양의 색상은 흰색으로 고정 */
         }
+
+        /* PC 화면(가로 992px 이상)에서만 사이드바 너비 적용 (모바일 화면 보호) */
+        @media (min-width: 992px) {
+
+            /* 1. 사이드바 전체 너비 증가 (기본값은 17rem 입니다) */
+            #sideNav {
+                width: 22rem !important;
+                /* 숫자를 키우면 더 넓어집니다. 예: 24rem, 25rem */
+            }
+
+            /* 2. 메인 화면이 넓어진 사이드바에 가려지지 않도록 왼쪽 여백을 동일하게 증가 */
+            body {
+                padding-left: 22rem !important;
+                /* 위 #sideNav의 width 값과 반드시 똑같이 맞춰주세요 */
+            }
+        }
     </style>
 </head>
 </head>
