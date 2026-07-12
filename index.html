@@ -26,6 +26,16 @@
         .text-primary {
             color: #862633 !important;
         }
+
+        /* 소셜 아이콘에 마우스를 올리거나 클릭(터치)했을 때의 색상 변경 */
+        .social-icons .social-icon:hover,
+        .social-icons .social-icon:focus,
+        .social-icons .social-icon:active {
+            background-color: #862633 !important;
+            /* 배경 원 색상을 PANTONE 202C로 변경 */
+            color: #ffffff !important;
+            /* 내부 아이콘 모양의 색상은 흰색으로 고정 */
+        }
     </style>
 </head>
 </head>
@@ -62,19 +72,24 @@
                     <span class="text-primary">Kim</span>
                 </h1>
                 <div class="subheading mb-5">
-                    Undergraduate Student @ Korea University
+                    Undergraduate Data Science Student @ Korea University
                 </div>
-                <p class="lead mb-5">I
+                <p class="lead mb-4">
                     Inspired by the unveiling of Boston Dynamics’ Atlas and LG CLOiD during my military service, I
-                    developed an interest in robotics.
+                    developed an interest
+                    in robotics.
+                </p>
 
+                <p class="lead mb-4">
                     I am currently exploring my interest in Vision-Language Models (VLM) and Vision-Language-Action
                     (VLA) architectures,
-                    with a strong commitment to continuous self-improvement to build a career in the robotics
-                    industry.
+                    with a strong commitment to continuous self-improvement to build a career in the robotics industry.
+                </p>
 
-                    To further deepen my academic foundation and field experience,
-                    I am highly interested in pursuing an internship at a research lab specializing in VLM and VLA.
+                <p class="lead mb-5">
+                    To further deepen my academic foundation and field experience, I am highly interested in pursuing an
+                    internship at a
+                    research lab specializing in VLM and VLA.
                 </p>
                 <div class="social-icons">
                     <a class="social-icon" href="mailto:jaehoondata@korea.ac.kr"><i class="fas fa-envelope"></i></a>
