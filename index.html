@@ -21,13 +21,11 @@
         #sideNav.bg-primary {
             background-color: #862633 !important;
         }
-
         /* 2. 본문 내 텍스트 강조색(이름 성씨, 날짜 등)도 같은 색상으로 통일 */
         .text-primary {
             color: #862633 !important;
         }
-
-        /* 소셜 아이콘에 마우스를 올리거나 클릭(터치)했을 때의 색상 변경 */
+        /* 3. 소셜 아이콘에 마우스를 올리거나 클릭(터치)했을 때의 색상 변경 */
         .social-icons .social-icon:hover,
         .social-icons .social-icon:focus,
         .social-icons .social-icon:active {
@@ -36,8 +34,7 @@
             color: #ffffff !important;
             /* 내부 아이콘 모양의 색상은 흰색으로 고정 */
         }
-
-        /* PC 화면(가로 992px 이상)에서만 사이드바 너비 적용 (모바일 화면 보호) */
+        /* 4. PC 화면(가로 992px 이상)에서만 사이드바 너비 적용 (모바일 화면 보호) */
         @media (min-width: 992px) {
 
             /* 1. 사이드바 전체 너비 증가 (기본값은 17rem 입니다) */
@@ -52,6 +49,19 @@
                 /* 위 #sideNav의 width 값과 반드시 똑같이 맞춰주세요 */
             }
         }
+        /* 5. 사이드바 프로필 이미지 크기 키우기 */
+        #sideNav .navbar-brand .img-profile {
+        max-width: 13rem !important; /* 기본값은 10rem 입니다. 숫자를 키울수록 사진이 커집니다. (예: 12rem, 14rem) */
+        width: 13rem !important;
+        height: 13rem !important;
+    }
+
+    /* 2. 사이드바 메뉴 제목(About, Experience 등) 글씨 크기 키우기 */
+    #sideNav .navbar-nav .nav-item .nav-link {
+        font-size: 1.5rem !important; /* 글씨 크기를 조절합니다. 원하는 크기에 맞춰 1.2rem ~ 2rem 사이에서 조절해 보세요. */
+        margin-bottom: 0.5rem !important; /* 메뉴 제목들 사이의 위아래 간격을 살짝 넓혀서 답답해 보이지 않게 합니다. */
+    }
+</style>
     </style>
 </head>
 </head>
@@ -60,7 +70,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Clarence Taylor</span>
+            <span class="d-block d-lg-none">Jaehoon Kim</span>
             <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
                     src="assets/img/profile.jpg" alt="..." /></span>
         </a>
@@ -69,12 +79,12 @@
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#educagtion">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">EDUCATION</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">PROJECTS</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#servicesandleadership">SERVICES AND
-                        LEADERSHIP</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#servicesandleadership">SERVICES AND LEADERSHIP</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#news">NEWS</a></li>
             </ul>
         </div>
     </nav>
